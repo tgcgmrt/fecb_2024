@@ -1,0 +1,16 @@
+##### Written by Raj, Date 12/01/2018
+
+
+##### A simple TCP/IP server which communicates with FECB-DeviceClient...
+
+Once Server is run on terminal, It ask for Operation to perform.
+
+ $./server
+
+Enter the Operation Code : 0 for Null, 1 for SETRFSYS, 3 for Domon
+
+NULL and DOMON don't take any arguments.
+
+SETRFSYS ask for Channel 1 & 2 Frequency band ( for ex : 235/325/610/1420)
+=> Once we provide both channel frequency band, program packs that with other parameters and send it over to deviceClient.
+=> It waits for Intermediate Response and then Final Response, Which will complete the loop. 
